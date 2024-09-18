@@ -32,18 +32,18 @@ open class KoinRegistrar: InjektRegistrar {
     }
 
     override fun <R : Any, K : Any> getKeyedInstance(forType: Type, key: K): R {
-        return getKoin().get(forType.kotlinClass, named(key.toString()))
+        return getKoin().get(forType.kotlinClass, named(key as? String ?: key.toString()))
     }
 
     override fun <R : Any, K : Any> getKeyedInstanceOrElse(forType: Type, key: K, default: R): R {
-        return getKoinOrNull()?.getOrNull(forType.kotlinClass, named(key.toString())) ?: default
+        return getKoinOrNull()?.getOrNull(forType.kotlinClass, named(key as? String ?: key.toString())) ?: default
     }
 
     override fun <R : Any, K : Any> getKeyedInstanceOrElse(forType: Type, key: K, default: () -> R): R {
-        return getKoinOrNull()?.getOrNull(forType.kotlinClass, named(key.toString())) ?: default.invoke()
+        return getKoinOrNull()?.getOrNull(forType.kotlinClass, named(key as? String ?: key.toString())) ?: default.invoke()
     }
 
     override fun <R : Any, K : Any> getKeyedInstanceOrNull(forType: Type, key: K): R? {
-        return getKoinOrNull()?.getOrNull(forType.kotlinClass, named(key.toString()))
+        return getKoinOrNull()?.getOrNull(forType.kotlinClass, named(key as? String ?: key.toString()))
     }
 }
