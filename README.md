@@ -10,7 +10,8 @@ Bridge between Injekt and Koin.
 
 Projects like Tachiyomi allow their users to create extensions, those extensions are able to use Injekt for dependency
 injection, because of that, migrating to a different dependency injection is not a straight forward process, this
-library aim to solve that issue and provide Injekt API for those user-made extensions to use.
+library aim to solve that issue and provide Injekt API for those user-made extensions to use to provide backwards
+compatibility.
 
 # Injekt
 
