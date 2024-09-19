@@ -8,6 +8,7 @@ interface InjektRegistrar: InjektRegistry, InjektFactory
 
 open class KoinRegistrar: InjektRegistrar {
 
+    // REF: https://github.com/InsertKoinIO/koin/blob/74f91987ef94e63e8ea23ac9ed0ce24d6650d742/projects/core/koin-core/src/commonMain/kotlin/org/koin/core/component/KoinComponent.kt#L33
     private fun getKoin() = KoinPlatformTools.defaultContext().get()
     private fun getKoinOrNull() = KoinPlatformTools.defaultContext().getOrNull()
 
