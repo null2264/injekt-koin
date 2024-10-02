@@ -13,13 +13,17 @@ injection, because of that, migrating to a different dependency injection is not
 library aim to solve that issue and provide Injekt API for those user-made extensions to use to provide backwards
 compatibility.
 
-# Injekt
+## What's Injekt?
 
-Injekt gives you crazy easy **Dependency Injection** in Kotlin.  Although you can probably use it in other JVM languages if you are feeling lucky.
+> [!IMPORTANT]
+> This description is retrieved directly from [Injekt](https://github.com/kohesive/injekt)'s repository.
+> The original project itself is archived in favor of Kodein, another Dependecy Injection library.
 
-Injekt is NOT inversion of control.  It is NOT some mystical class file manipulator.  It is NOT complex.  But it IS powerful.
+Injekt gives you crazy easy **Dependency Injection** in Kotlin. Although you can probably use it in other JVM languages if you are feeling lucky.
 
-Injekt can also load, bind to objects, and inject configuration using Typesafe Config.  Read more in the [injekt-config-typesafe module](https://github.com/kohesive/klutter/tree/master/config-typesafe).
+Injekt is NOT inversion of control. It is NOT some mystical class file manipulator. It is NOT complex. But it IS powerful.
+
+Injekt can also load, bind to objects, and inject configuration using Typesafe Config. Read more in the [injekt-config-typesafe module](https://github.com/kohesive/klutter/tree/master/config-typesafe).
 
 ## Usage
 
